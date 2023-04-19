@@ -31,4 +31,11 @@ public class ArrayTests {
     assertArrayEquals(expected, input);
   
   }
+
+  @Test
+  public void AverageWithoutLowest(){
+    double [] input = {1,2,3,4,5,6,1};
+    boolean a = ((1+2+3+4+5+6)/6.0) == ArrayExamples.averageWithoutLowest(input);
+    assertEquals(true, a);
+  }
 }
